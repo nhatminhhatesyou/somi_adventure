@@ -1,5 +1,4 @@
 #include "GSPlay.h"
-
 #include "Shader.h"
 #include "Texture.h"
 #include "Model.h"
@@ -26,13 +25,25 @@ GSPlay::~GSPlay()
 void GSPlay::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D.nfg");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_play1.tga");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("BG.tga");
 
 	// background
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
-	m_background = std::make_shared<Sprite2D>(model, shader, texture);
-	m_background->Set2DPosition((float)Globals::screenWidth / 2, (float)Globals::screenHeight / 2);
-	m_background->SetSize(Globals::screenWidth, Globals::screenHeight);
+		//layer1
+	
+	m_background_1 = std::make_shared<Sprite2D>(model, shader, texture);
+	m_background_1->Set2DPosition((float)Globals::screenWidth / 2, (float)Globals::screenHeight / 2);
+	m_background_1->SetSize(Globals::screenWidth, Globals::screenHeight);
+		//Big clouds
+	texture = ResourceManagers::GetInstance()->GetTexture("Big Clouds.tga");
+	m_background_2 = std::make_shared<Sprite2D>(model, shader, texture);
+	m_background_2->Set2DPosition((float)Globals::screenWidth / 2, (float)Globals::screenHeight / 2 + 15);
+	m_background_2->SetSize(1080, 243);
+		//layer3
+	texture = ResourceManagers::GetInstance()->GetTexture("Big Clouds.tga");
+	m_background_3 = std::make_shared<Sprite2D>(model, shader, texture);
+	m_background_3->Set2DPosition(3 * (float)Globals:: screenWidth / 2, (float)Globals::screenHeight / 2 + 15);
+	m_background_3->SetSize(1080, 243);
 
 	// button close
 	texture = ResourceManagers::GetInstance()->GetTexture("btn_close.tga");
@@ -51,12 +62,12 @@ void GSPlay::Init()
 	m_score->Set2DPosition(Vector2(5, 25));
 
 	shader = ResourceManagers::GetInstance()->GetShader("Animation");
-	texture = ResourceManagers::GetInstance()->GetTexture("Actor1_2.tga");
-	std::shared_ptr<SpriteAnimation> obj = std::make_shared<SpriteAnimation>(model, shader, texture, 9, 6, 3, 0.1f);
+	texture = ResourceManagers::GetInstance()->GetTexture("Idle1.tga");
+	std::shared_ptr<SpriteAnimation> obj_idle1 = std::make_shared<SpriteAnimation>(model, shader, texture, 5, 1, 0, 0.1f);
 	
-	obj->Set2DPosition(240, 400);
-	obj->SetSize(30, 40);
-	m_listAnimation.push_back(obj);
+	obj_idle1->Set2DPosition(120, 120);
+	obj_idle1->SetSize(150, 150);
+	m_listAnimation.push_back(obj_idle1);
 	m_KeyPress = 0;
 }
 
@@ -126,6 +137,7 @@ void GSPlay::HandleTouchEvents(int x, int y, bool bIsPressed)
 {
 	for (auto button : m_listButton)
 	{
+
 		if(button->HandleTouchEvents(x, y, bIsPressed))
 		{
 			break;
@@ -141,9 +153,31 @@ void GSPlay::Update(float deltaTime)
 {
 	switch (m_KeyPress)//Handle Key event
 	{
+
+	case 1: // move left
+		for (auto it : m_listAnimation) {
+			it->Set2DPosition(it->GetPosition().x - 100 * deltaTime, it->GetPosition().y);
+		}
+		break;
+	case 2: // move down
+		for (auto it : m_listAnimation) {
+			it->Set2DPosition(it->GetPosition().x, it->GetPosition().y + 100 * deltaTime);
+		}
+		break;
+	case 4: // move right
+		for (auto it : m_listAnimation) {
+			it->Set2DPosition(it->GetPosition().x + 100 * deltaTime, it->GetPosition().y);
+		}
+		break;
+	case 8: // JUMP	
+		for (auto it : m_listAnimation) {
+			printf("forward ");
+			it->Set2DPosition(it->GetPosition().x, it->GetPosition().y - 100 * deltaTime);
+		}
 	default:
 		break;
 	}
+
 	for (auto it : m_listButton)
 	{
 		it->Update(deltaTime);
@@ -152,11 +186,22 @@ void GSPlay::Update(float deltaTime)
 	{
 		it->Update(deltaTime);
 	}
+
+	m_background_2->Set2DPosition(m_background_2->GetPosition().x - 100 * deltaTime, m_background_2->GetPosition().y);
+	if (m_background_2->GetPosition().x < -(float)Globals::screenWidth / 2)
+		m_background_2->Set2DPosition(m_background_2->GetPosition().x + 4 * (float)Globals::screenWidth / 2, m_background_2->GetPosition().y);
+
+	m_background_3->Set2DPosition(m_background_3->GetPosition().x - 100 * deltaTime, m_background_3->GetPosition().y);
+	if (m_background_3->GetPosition().x < -(float)Globals::screenWidth / 2)
+		m_background_3->Set2DPosition(m_background_3->GetPosition().x + 4 * (float)Globals::screenWidth / 2, m_background_3->GetPosition().y);
+
 }
 
 void GSPlay::Draw()
 {
-	m_background->Draw();
+	m_background_1->Draw();
+	m_background_2->Draw();
+	m_background_3->Draw();
 	m_score->Draw();
 	for (auto it : m_listButton)
 	{

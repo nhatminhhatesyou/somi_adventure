@@ -1,0 +1,68 @@
+﻿  Application.cpp
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\xutility(149,77): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2018): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,int,int,int&,int,int&,float,float,float>(_Ty &,int &&,int &&,int &,int &&,int &,float &&,float &&,float &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Camera
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<int,int,int&,int,int&,float,float,float>(int &&,int &&,int &,int &&,int &,float &&,float &&,float &&)' being compiled
+          with
+          [
+              _Ty=Camera
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<int,int,int&,int,int&,float,float,float>(int &&,int &&,int &,int &&,int &,float &&,float &&,float &&)' being compiled
+          with
+          [
+              _Ty=Camera
+          ]
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\Application.cpp(20): message : see reference to function template instantiation 'std::shared_ptr<Camera> std::make_shared<Camera,int,int,int&,int,int&,float,float,float>(int &&,int &&,int &,int &&,int &,float &&,float &&,float &&)' being compiled
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\xutility(149,77): warning C4244: 'argument': conversion from '_Ty' to 'GLfloat', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  ResourceManagers.cpp
+  GameButton.cpp
+  Sprite2D.cpp
+  GSIntro.cpp
+  GSMenu.cpp
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSMenu.cpp(23,78): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSMenu.cpp(23,51): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSMenu.cpp(29,72): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSMenu.cpp(29,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSMenu.cpp(39,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  GSPlay.cpp
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(51,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(159,78): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(159,42): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(164,63): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(164,39): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(169,78): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(169,42): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(175,63): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(175,39): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\xutility(149,77): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2018): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[10],TextColor,double>(_Ty &,std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[10],TextColor &&,double &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[10],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[10],TextColor &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[10],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[10],TextColor &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(61): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[10],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[10],TextColor &&,double &&)' being compiled
+  GameStateBase.cpp
+  GameStateMachine.cpp
+  Generating Code...
+  TrainingFramework.vcxproj -> C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe

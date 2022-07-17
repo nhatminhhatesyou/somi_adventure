@@ -29,7 +29,7 @@ public:
 	int m_KeyPress;
 
 private:
-	std::shared_ptr<Sprite2D>	m_background;
+	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3;
 	std::shared_ptr<Text>		m_score;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 	std::list<std::shared_ptr<SpriteAnimation>>	m_listAnimation;
