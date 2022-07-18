@@ -62,6 +62,8 @@ public:
 		m_worldMatrix = S * R * T;
 	}
 
+
+
 protected:
 	Vector3			m_position;
 	Vector3			m_scale;

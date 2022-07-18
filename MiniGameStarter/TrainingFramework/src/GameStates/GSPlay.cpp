@@ -39,11 +39,25 @@ void GSPlay::Init()
 	m_background_2 = std::make_shared<Sprite2D>(model, shader, texture);
 	m_background_2->Set2DPosition((float)Globals::screenWidth / 2, (float)Globals::screenHeight / 2 + 15);
 	m_background_2->SetSize(1080, 243);
-		//layer3
+		//Big clouds
 	texture = ResourceManagers::GetInstance()->GetTexture("Big Clouds.tga");
 	m_background_3 = std::make_shared<Sprite2D>(model, shader, texture);
 	m_background_3->Set2DPosition(3 * (float)Globals:: screenWidth / 2, (float)Globals::screenHeight / 2 + 15);
 	m_background_3->SetSize(1080, 243);
+		// ground
+	texture = ResourceManagers::GetInstance()->GetTexture("Ground.tga");
+	m_ground = std::make_shared<Sprite2D>(model, shader, texture);
+	m_ground->Set2DPosition((float)Globals::screenWidth / 2, 660);
+	m_ground->SetSize(1080, 120);
+	
+	// OBSTACLE
+	texture = ResourceManagers::GetInstance()->GetTexture("plat1.tga");
+	m_obstacle_1 = std::make_shared<Sprite2D>(model, shader, texture);
+	m_obstacle_1->Set2DPosition((float)Globals::screenWidth / 2, 520);
+	m_obstacle_1->SetSize(384, 288);
+
+
+
 
 	// button close
 	texture = ResourceManagers::GetInstance()->GetTexture("btn_close.tga");
@@ -58,17 +72,23 @@ void GSPlay::Init()
 	// score
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
 	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Brightly Crush Shine.otf");
-	m_score = std::make_shared< Text>(shader, font, "score: 10", TextColor::RED, 1.0);
+	m_score = std::make_shared< Text>(shader, font, "hihi", TextColor::RED, 1.0);
 	m_score->Set2DPosition(Vector2(5, 25));
 
+
+	//character
 	shader = ResourceManagers::GetInstance()->GetShader("Animation");
 	texture = ResourceManagers::GetInstance()->GetTexture("Idle1.tga");
 	std::shared_ptr<SpriteAnimation> obj_idle1 = std::make_shared<SpriteAnimation>(model, shader, texture, 5, 1, 0, 0.1f);
 	
-	obj_idle1->Set2DPosition(120, 120);
-	obj_idle1->SetSize(150, 150);
+	obj_idle1->Set2DPosition(120, 568);
+	obj_idle1->SetSize(128, 128);
 	m_listAnimation.push_back(obj_idle1);
 	m_KeyPress = 0;
+
+	// Init Obstacle
+
+
 }
 
 void GSPlay::Exit()
@@ -88,6 +108,7 @@ void GSPlay::Resume()
 void GSPlay::HandleEvents()
 {
 }
+
 
 void GSPlay::HandleKeyEvents(int key, bool bIsPressed)
 {
@@ -156,6 +177,7 @@ void GSPlay::Update(float deltaTime)
 
 	case 1: // move left
 		for (auto it : m_listAnimation) {
+			
 			it->Set2DPosition(it->GetPosition().x - 100 * deltaTime, it->GetPosition().y);
 		}
 		break;
@@ -177,7 +199,7 @@ void GSPlay::Update(float deltaTime)
 	default:
 		break;
 	}
-
+	//
 	for (auto it : m_listButton)
 	{
 		it->Update(deltaTime);
@@ -202,6 +224,8 @@ void GSPlay::Draw()
 	m_background_1->Draw();
 	m_background_2->Draw();
 	m_background_3->Draw();
+	m_ground->Draw();
+	m_obstacle_1->Draw();
 	m_score->Draw();
 	for (auto it : m_listButton)
 	{
@@ -212,4 +236,5 @@ void GSPlay::Draw()
 	{
 		it->Draw();
 	}
+
 }
