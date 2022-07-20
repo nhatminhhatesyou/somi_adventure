@@ -1,204 +1,28 @@
-﻿  Obstacle.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\Obstacle.h(8,1): error C2059: syntax error: '}'
-  Application.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  ResourceManagers.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  GameButton.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  Sprite2D.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  Sprite3D.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  SpriteAnimation.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\SpriteAnimation.cpp(82,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\SpriteAnimation.cpp(87,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\SpriteAnimation.cpp(92,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\SpriteAnimation.cpp(97,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-  Text.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  GameStateBase.cpp
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,38): error C2065: 'Sprite2D': undeclared identifier
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65,27): error C2923: 'std::shared_ptr': 'Sprite2D' is not a valid template type argument for parameter '_Ty'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(65): message : see declaration of 'Sprite2D'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(67,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,20): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(68,25): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(69,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,32): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,37): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,96): error C2675: unary '->': 'std::shared_ptr' does not define this operator or a conversion to a type acceptable to the predefined operator
-C:\Users\han.glschool2\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameObject\BaseObject.h(71,101): error C2039: 'GetPosition': is not a member of 'std::shared_ptr'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(1504): message : see declaration of 'std::shared_ptr'
-  GameStateMachine.cpp
+﻿  GSPlay.cpp
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(71,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\xutility(149,77): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2018): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(_Ty &,std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(81): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
+soloud_static_d.lib(stb_vorbis.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(stb_vorbis.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
+soloud_static_d.lib(soloud.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(soloud.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
+soloud_static_d.lib(soloud_fader.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(soloud_fader.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
+soloud_static_d.lib(soloud_fft.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(soloud_fft.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
+  TrainingFramework.vcxproj -> C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe

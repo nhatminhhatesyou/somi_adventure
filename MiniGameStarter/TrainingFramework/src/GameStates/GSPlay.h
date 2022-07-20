@@ -1,12 +1,12 @@
 #pragma once
 #include "GameStateBase.h"
 
-class Obstacle;
 class Sprite2D;
 class Sprite3D;
 class Text;
 class GameButton;
 class SpriteAnimation;
+class Obstacle;
 
 class GSPlay :
 	public GameStateBase

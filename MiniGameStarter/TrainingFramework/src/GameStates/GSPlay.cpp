@@ -9,6 +9,7 @@
 #include "Text.h"
 #include "GameButton.h"
 #include "SpriteAnimation.h"
+#include "Obstacle.h"
 
 
 
@@ -51,12 +52,17 @@ void GSPlay::Init()
 	m_ground->SetSize(1080, 120);
 	
 	// OBSTACLE
-	texture = ResourceManagers::GetInstance()->GetTexture("plat1.tga");
+	texture = ResourceManagers::GetInstance()->GetTexture("obs1.tga");
 	m_obstacle_1 = std::make_shared<Sprite2D>(model, shader, texture);
 	m_obstacle_1->Set2DPosition((float)Globals::screenWidth / 2, 520);
 	m_obstacle_1->SetSize(384, 288);
 
-
+	// Init Obstacle
+	texture = ResourceManagers::GetInstance()->GetTexture("obs1.tga");
+	std::shared_ptr<Obstacle> obs1 = std::make_shared<Obstacle>(model, shader, texture);
+	obs1->Set2DPosition((float)Globals::screenWidth / 2, 520);
+	obs1->SetSize(384, 288);
+	m_listObstacles.push_back(obs1);
 
 
 	// button close
@@ -85,8 +91,6 @@ void GSPlay::Init()
 	obj_idle1->SetSize(128, 128);
 	m_listAnimation.push_back(obj_idle1);
 	m_KeyPress = 0;
-
-	// Init Obstacle
 
 
 }
@@ -193,7 +197,6 @@ void GSPlay::Update(float deltaTime)
 		break;
 	case 8: // JUMP	
 		for (auto it : m_listAnimation) {
-			printf("forward ");
 			it->Set2DPosition(it->GetPosition().x, it->GetPosition().y - 100 * deltaTime);
 		}
 	default:
@@ -225,8 +228,10 @@ void GSPlay::Draw()
 	m_background_2->Draw();
 	m_background_3->Draw();
 	m_ground->Draw();
-	m_obstacle_1->Draw();
 	m_score->Draw();
+
+	
+
 	for (auto it : m_listButton)
 	{
 		it->Draw();
@@ -237,4 +242,9 @@ void GSPlay::Draw()
 		it->Draw();
 	}
 
+	for (auto it : m_listObstacles)
+	{
+		it->Draw();
+	}
+	
 }
