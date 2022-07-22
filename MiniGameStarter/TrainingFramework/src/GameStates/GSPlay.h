@@ -27,9 +27,13 @@ public:
 	void	Update(float deltaTime) override;
 	void	Draw() override;
 	int m_KeyPress;
+	float Player_Pos_X, Player_Pos_Y;
+	float speed = 350;
+	float jumpHeight = 300;
+	float maxHeight;
 
 private:
-	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3, m_ground;
+	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3;
 	std::shared_ptr<Sprite2D>	m_obstacle_1, m_obstacle_2, m_obstacle_3;
 	std::shared_ptr<Text>		m_score;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;

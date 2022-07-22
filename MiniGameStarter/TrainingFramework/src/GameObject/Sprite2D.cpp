@@ -120,3 +120,9 @@ void Sprite2D::SetSize(GLint width, GLint height)
 	m_scale = Vector3((GLfloat)m_iWidth, (GLfloat)m_iHeight, 1.0f);
 	CalculateWorldMatrix();
 }
+
+Vector2 Sprite2D::GetSize()
+{
+	Vector2 ret(m_iWidth, m_iHeight);
+	return ret;
+}

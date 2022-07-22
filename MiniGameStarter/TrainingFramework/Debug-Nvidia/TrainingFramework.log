@@ -1,5 +1,5 @@
 ﻿  GSPlay.cpp
-C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(71,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(66,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
 E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\xutility(149,77): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
@@ -20,9 +20,5 @@ E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see re
           [
               _Ty=Text
           ]
-C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(81): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
-soloud_static_d.lib(stb_vorbis.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(stb_vorbis.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
-soloud_static_d.lib(soloud.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(soloud.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
-soloud_static_d.lib(soloud_fader.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(soloud_fader.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
-soloud_static_d.lib(soloud_fft.obj) : warning LNK4099: PDB 'soloud_static.pdb' was not found with 'soloud_static_d.lib(soloud_fft.obj)' or at 'C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\soloud_static.pdb'; linking object as if no debug info
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(76): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
   TrainingFramework.vcxproj -> C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe

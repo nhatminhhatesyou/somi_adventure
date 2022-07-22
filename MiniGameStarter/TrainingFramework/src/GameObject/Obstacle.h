@@ -8,8 +8,6 @@ public:
 	Obstacle() : Sprite2D() {}
 	Obstacle(std::shared_ptr<Model> model, std::shared_ptr<Shader> shader, std::shared_ptr<Texture> texture);
 	~Obstacle();
-
-
-private:
-
+	bool CollisionCheck(GLfloat x, GLfloat y);
+	bool OnGround(GLfloat y);
 };

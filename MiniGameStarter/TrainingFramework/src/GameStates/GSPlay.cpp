@@ -47,15 +47,10 @@ void GSPlay::Init()
 	m_background_3->SetSize(1080, 243);
 		// ground
 	texture = ResourceManagers::GetInstance()->GetTexture("Ground.tga");
-	m_ground = std::make_shared<Sprite2D>(model, shader, texture);
+	std::shared_ptr<Obstacle> m_ground = std::make_shared<Obstacle>(model, shader, texture);
 	m_ground->Set2DPosition((float)Globals::screenWidth / 2, 660);
 	m_ground->SetSize(1080, 120);
-	
-	// OBSTACLE
-	texture = ResourceManagers::GetInstance()->GetTexture("obs1.tga");
-	m_obstacle_1 = std::make_shared<Sprite2D>(model, shader, texture);
-	m_obstacle_1->Set2DPosition((float)Globals::screenWidth / 2, 520);
-	m_obstacle_1->SetSize(384, 288);
+	m_listObstacles.push_back(m_ground);
 
 	// Init Obstacle
 	texture = ResourceManagers::GetInstance()->GetTexture("obs1.tga");
@@ -86,8 +81,9 @@ void GSPlay::Init()
 	shader = ResourceManagers::GetInstance()->GetShader("Animation");
 	texture = ResourceManagers::GetInstance()->GetTexture("Idle1.tga");
 	std::shared_ptr<SpriteAnimation> obj_idle1 = std::make_shared<SpriteAnimation>(model, shader, texture, 5, 1, 0, 0.1f);
-	
-	obj_idle1->Set2DPosition(120, 568);
+	Player_Pos_X = 120;
+	Player_Pos_Y = 568;
+	obj_idle1->Set2DPosition(Player_Pos_X, Player_Pos_Y);
 	obj_idle1->SetSize(128, 128);
 	m_listAnimation.push_back(obj_idle1);
 	m_KeyPress = 0;
@@ -176,31 +172,95 @@ void GSPlay::HandleMouseMoveEvents(int x, int y)
 
 void GSPlay::Update(float deltaTime)
 {
+	bool Col, On_ground;
 	switch (m_KeyPress)//Handle Key event
 	{
 
 	case 1: // move left
 		for (auto it : m_listAnimation) {
-			
-			it->Set2DPosition(it->GetPosition().x - 100 * deltaTime, it->GetPosition().y);
+			for (auto obs : m_listObstacles) {
+				Col = obs->CollisionCheck(Player_Pos_X - speed * deltaTime, Player_Pos_Y);
+				if (Col)
+					break;
+			}
+			if (Col)
+				break;
+			Player_Pos_X -= speed * deltaTime;
+			it->Set2DPosition(Player_Pos_X, Player_Pos_Y);
 		}
 		break;
 	case 2: // move down
 		for (auto it : m_listAnimation) {
-			it->Set2DPosition(it->GetPosition().x, it->GetPosition().y + 100 * deltaTime);
+			for (auto obs : m_listObstacles) {
+				Col = obs->CollisionCheck(Player_Pos_X, Player_Pos_Y + speed * deltaTime);
+				if (Col)
+					break;
+			}
+			if (Col)
+				break;
+			Player_Pos_Y += speed * deltaTime;
+			it->Set2DPosition(Player_Pos_X, Player_Pos_Y);
 		}
 		break;
 	case 4: // move right
 		for (auto it : m_listAnimation) {
-			it->Set2DPosition(it->GetPosition().x + 100 * deltaTime, it->GetPosition().y);
+			for (auto obs : m_listObstacles) {
+				Col = obs->CollisionCheck(Player_Pos_X + speed * deltaTime, Player_Pos_Y);
+				if (Col)
+					break;
+			}
+			if (Col)
+				break;
+			Player_Pos_X += speed * deltaTime;
+			it->Set2DPosition(Player_Pos_X, Player_Pos_Y);
 		}
 		break;
 	case 8: // JUMP	
+		maxHeight = Player_Pos_Y - jumpHeight;
 		for (auto it : m_listAnimation) {
-			it->Set2DPosition(it->GetPosition().x, it->GetPosition().y - 100 * deltaTime);
+			for (auto obs : m_listObstacles) {
+				Col = obs->CollisionCheck(Player_Pos_X , Player_Pos_Y - speed * deltaTime);
+				if (Col)
+					break;
+			}
+			
+			while (Player_Pos_Y > maxHeight)
+			{
+				Player_Pos_Y -= speed * deltaTime;
+				it->Set2DPosition(Player_Pos_X, Player_Pos_Y); 
+			}
 		}
 	default:
 		break;
+	case 9: // jump left
+		for (auto it : m_listAnimation) {
+			for (auto obs : m_listObstacles) {
+				Col = obs->CollisionCheck(Player_Pos_X - speed * deltaTime, Player_Pos_Y - speed * deltaTime);
+				if (Col)
+					break;
+			}
+			if (Col)
+				break;
+			Player_Pos_Y -= speed * deltaTime;
+			Player_Pos_X -= speed * deltaTime;
+			it->Set2DPosition(Player_Pos_X, Player_Pos_Y);
+		}
+		break;
+	case 12: // jump right
+		for (auto it : m_listAnimation) {
+			for (auto obs : m_listObstacles) {
+				Col = obs->CollisionCheck(Player_Pos_X + speed * deltaTime, Player_Pos_Y - speed * deltaTime);
+				if (Col)
+					break;
+			}
+			if (Col)
+				break;
+			Player_Pos_Y -= speed * deltaTime;
+			Player_Pos_X += speed * deltaTime;
+			it->Set2DPosition(Player_Pos_X, Player_Pos_Y);
+		}
+		break;
+	
 	}
 	//
 	for (auto it : m_listButton)
@@ -227,7 +287,6 @@ void GSPlay::Draw()
 	m_background_1->Draw();
 	m_background_2->Draw();
 	m_background_3->Draw();
-	m_ground->Draw();
 	m_score->Draw();
 
 	
@@ -247,4 +306,5 @@ void GSPlay::Draw()
 		it->Draw();
 	}
 	
+
 }
