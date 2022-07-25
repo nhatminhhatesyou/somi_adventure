@@ -10,4 +10,5 @@ public:
 	~Obstacle();
 	bool CollisionCheck(GLfloat x, GLfloat y);
 	bool OnGround(GLfloat y);
+	void ResetPos();
 };

@@ -26,3 +26,7 @@ bool Obstacle::OnGround(GLfloat y) {
 	if (y < (PosY + this->GetSize().y / 2 + 30)) return false;
 	else return true;
 }
+
+void Obstacle::ResetPos() {
+		this->Set2DPosition(1080 + 24, 560);	
+}

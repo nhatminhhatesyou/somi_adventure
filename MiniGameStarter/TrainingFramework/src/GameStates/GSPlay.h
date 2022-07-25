@@ -7,6 +7,7 @@ class Text;
 class GameButton;
 class SpriteAnimation;
 class Obstacle;
+class Player;
 
 class GSPlay :
 	public GameStateBase
@@ -28,16 +29,18 @@ public:
 	void	Draw() override;
 	int m_KeyPress;
 	float Player_Pos_X, Player_Pos_Y;
-	float speed = 350;
+	float speed = 200;
 	float jumpHeight = 300;
 	float maxHeight;
 
 private:
+	std::shared_ptr<Player>		m_player;
 	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3;
-	std::shared_ptr<Sprite2D>	m_obstacle_1, m_obstacle_2, m_obstacle_3;
+	std::shared_ptr<Sprite2D>	m_ground1, m_ground2;
+	std::shared_ptr<Obstacle>	spike_1, spike_2, spike_3, spike_4;
 	std::shared_ptr<Text>		m_score;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 	std::list<std::shared_ptr<SpriteAnimation>>	m_listAnimation;
-	std::list<std::shared_ptr<Obstacle>>	m_listObstacles;
+	std::vector<std::shared_ptr<Obstacle>>	m_listObstacles;
 };
 
