@@ -27,21 +27,23 @@ public:
 	void	HandleMouseMoveEvents(int x, int y) override;
 	void	Update(float deltaTime) override;
 	void	Draw() override;
-	int m_KeyPress;
-	float Player_Pos_X, Player_Pos_Y;
-	float Timer = 0;
-	float speed = 200;
-	int rd = rand() % (2 - 1 + 1) + 1;
-	int cur_score = 0;
-	std::string score;
-	std::string hi_score ;
+	int		m_KeyPress;	
+	int		rd = rand() % (2 - 1 + 1) + 1;
+	int		cur_score = 0;
+	int		hi_score = 0;
+	float	Player_Pos_X, Player_Pos_Y;
+	float	Timer = 0;
+	float	speed = 200;
+	bool	GameOver = false;
+
 
 private:
 	std::shared_ptr<Player>		m_player;
 	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3, small_cloud_1, small_cloud_2, small_cloud_3;
 	std::shared_ptr<Sprite2D>	m_ground1, m_ground2;
 	std::shared_ptr<Obstacle>	spike_1, spike_2, spike_3, spike_4;
-	std::shared_ptr<Text>		m_score;
+	std::shared_ptr<Text>		m_score, m_hiScore, m_playAgain;
+	std::shared_ptr<GameButton> m_playButton;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 	std::list<std::shared_ptr<SpriteAnimation>>	m_listAnimation;
 	std::vector<std::shared_ptr<Obstacle>>	m_listObstacles;

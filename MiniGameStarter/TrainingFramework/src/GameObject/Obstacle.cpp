@@ -12,7 +12,7 @@ Obstacle::~Obstacle()
 bool Obstacle::CollisionCheck(GLfloat x, GLfloat y) {
 	float PosX = this->GetPosition().x; //toa do x cua obstacle
 	float PosY = this->GetPosition().y; //toa do y cua obstacle
-	if (x >= (PosX - this->GetSize().x / 2 - 30) && x <= (PosX + this->GetSize().x / 2 + 30) && y >= (PosY - this->GetSize().y / 2 - 30) && y <= (PosY + this->GetSize().y / 2 + 30))
+	if (x >= (PosX - this->GetSize().x / 2 - 20) && x <= (PosX + this->GetSize().x / 2 + 20) && y >= (PosY - this->GetSize().y / 2 - 20) && y <= (PosY + this->GetSize().y / 2 + 20))
 	{
 		return true;
 	}
@@ -27,7 +27,7 @@ bool Obstacle::OnGround(GLfloat y) {
 }
 
 void Obstacle::ResetPos() {
-		this->Set2DPosition(1080 + 24, 560);	
+		this->Set2DPosition(1080 + 31, 550);	
 }
 
 void Obstacle::Spawn(GLfloat deltaTime, float speed) {	

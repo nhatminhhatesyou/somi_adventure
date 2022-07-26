@@ -21,6 +21,7 @@
 class Globals
 {
 public:
+	static int hi_score;
 	static int Globals::screenWidth;
 	static int Globals::screenHeight;
 };

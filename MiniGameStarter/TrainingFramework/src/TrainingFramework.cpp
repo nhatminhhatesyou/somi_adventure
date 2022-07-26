@@ -3,6 +3,7 @@
 #include "Application.h"
 #include "utilities.h" 
 
+int Globals::hi_score = 0;
 int Globals::screenWidth = 1080;
 int Globals::screenHeight = 720;
 
