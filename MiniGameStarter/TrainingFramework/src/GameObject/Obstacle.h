@@ -11,4 +11,5 @@ public:
 	bool CollisionCheck(GLfloat x, GLfloat y);
 	bool OnGround(GLfloat y);
 	void ResetPos();
+	void Spawn(GLfloat deltaTime, float speed);
 };

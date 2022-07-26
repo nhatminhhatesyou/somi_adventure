@@ -44,6 +44,22 @@ void GSPlay::Init()
 		m_background_3 = std::make_shared<Sprite2D>(model, shader, texture);
 		m_background_3->Set2DPosition(3 * (float)Globals:: screenWidth / 2, (float)Globals::screenHeight / 2 + 15);
 		m_background_3->SetSize(1080, 243);
+		//Small clouds 1
+		texture = ResourceManagers::GetInstance()->GetTexture("Small Cloud 1.tga");
+		small_cloud_1 = std::make_shared<Sprite2D>(model, shader, texture);
+		small_cloud_1->Set2DPosition((float)Globals::screenWidth / 2 -300, 200);
+		small_cloud_1->SetSize(148, 48);
+		//Small clouds 2
+		texture = ResourceManagers::GetInstance()->GetTexture("Small Cloud 2.tga");
+		small_cloud_2 = std::make_shared<Sprite2D>(model, shader, texture);
+		small_cloud_2->Set2DPosition((float)Globals::screenWidth / 2 - 660 , 100);
+		small_cloud_2->SetSize(266, 70);
+		//Small clouds 3
+		texture = ResourceManagers::GetInstance()->GetTexture("Small Cloud 2.tga");
+		small_cloud_3 = std::make_shared<Sprite2D>(model, shader, texture);
+		small_cloud_3->Set2DPosition((float)Globals::screenWidth / 2, 250);
+		small_cloud_3->SetSize(280, 78);
+
 		// ground1
 		texture = ResourceManagers::GetInstance()->GetTexture("Ground.tga");
 		m_ground1 = std::make_shared<Obstacle>(model, shader, texture);
@@ -59,29 +75,18 @@ void GSPlay::Init()
 
 	// Init Obstacle 
 		//Spike 1
-		texture = ResourceManagers::GetInstance()->GetTexture("Spike.tga");
+		texture = ResourceManagers::GetInstance()->GetTexture("Spike1.tga");
 		spike_1 = std::make_shared<Obstacle>(model, shader, texture);
-		spike_1->Set2DPosition((float)Globals::screenWidth + 24, 560);
-		spike_1->SetSize(47, 80);
+		spike_1->Set2DPosition((float)Globals::screenWidth + 41, 560);
+		spike_1->SetSize(82, 80);
 		m_listObstacles.push_back(spike_1);
 		//Spike 2
-		texture = ResourceManagers::GetInstance()->GetTexture("Spike.tga");
+		texture = ResourceManagers::GetInstance()->GetTexture("Spike1.tga");
 		spike_2 = std::make_shared<Obstacle>(model, shader, texture);
-		spike_2->Set2DPosition((float)Globals::screenWidth +24, 560);
-		spike_2->SetSize(47, 80);
+		spike_2->Set2DPosition((float)Globals::screenWidth +41, 560);
+		spike_2->SetSize(82, 80);
 		m_listObstacles.push_back(spike_2);
-		//Spike 3
-		texture = ResourceManagers::GetInstance()->GetTexture("Spike.tga");
-		spike_3 = std::make_shared<Obstacle>(model, shader, texture);
-		spike_3->Set2DPosition((float)Globals::screenWidth +24, 560);
-		spike_3->SetSize(47, 80);
-		m_listObstacles.push_back(spike_3);
-		//Spike 4
-		texture = ResourceManagers::GetInstance()->GetTexture("Spike.tga");
-		spike_4 = std::make_shared<Obstacle>(model, shader, texture);
-		spike_4->Set2DPosition((float)Globals::screenWidth +24, 560);
-		spike_4->SetSize(47, 80);
-		m_listObstacles.push_back(spike_4);
+
 
 
 	// button close
@@ -196,8 +201,6 @@ void GSPlay::HandleMouseMoveEvents(int x, int y)
 
 void GSPlay::Update(float deltaTime)
 {
-	bool Col;
-	float Timer = 0;
 	switch (m_KeyPress)//Handle Key event
 	{
 	case 1: // move left
@@ -259,13 +262,25 @@ void GSPlay::Update(float deltaTime)
 
 
 	//Moving Clouds
-		m_background_2->Set2DPosition(m_background_2->GetPosition().x - 100 * deltaTime, m_background_2->GetPosition().y);
+		m_background_2->Set2DPosition(m_background_2->GetPosition().x - 200 * deltaTime, m_background_2->GetPosition().y);
 		if (m_background_2->GetPosition().x < -(float)Globals::screenWidth / 2)
 			m_background_2->Set2DPosition(m_background_2->GetPosition().x + 4 * (float)Globals::screenWidth / 2, m_background_2->GetPosition().y);
 
-		m_background_3->Set2DPosition(m_background_3->GetPosition().x - 100 * deltaTime, m_background_3->GetPosition().y);
+		m_background_3->Set2DPosition(m_background_3->GetPosition().x - 200 * deltaTime, m_background_3->GetPosition().y);
 		if (m_background_3->GetPosition().x < -(float)Globals::screenWidth / 2)
 			m_background_3->Set2DPosition(m_background_3->GetPosition().x + 4 * (float)Globals::screenWidth / 2, m_background_3->GetPosition().y);
+
+		small_cloud_1->Set2DPosition(small_cloud_1->GetPosition().x - 100 * deltaTime, small_cloud_1->GetPosition().y);
+		if (small_cloud_1->GetPosition().x < -small_cloud_1->GetSize().x/2)
+			small_cloud_1->Set2DPosition((float)Globals::screenWidth + small_cloud_1->GetSize().x / 2, small_cloud_1->GetPosition().y);
+
+		small_cloud_2->Set2DPosition(small_cloud_2->GetPosition().x - 150 * deltaTime, small_cloud_2->GetPosition().y);
+		if (small_cloud_2->GetPosition().x < -small_cloud_2->GetSize().x / 2)
+			small_cloud_2->Set2DPosition((float)Globals::screenWidth + small_cloud_2->GetSize().x / 2, small_cloud_2->GetPosition().y);
+
+		small_cloud_3->Set2DPosition(small_cloud_3->GetPosition().x - 175 * deltaTime, small_cloud_3->GetPosition().y);
+		if (small_cloud_3->GetPosition().x < -small_cloud_3->GetSize().x / 2)
+			small_cloud_3->Set2DPosition((float)Globals::screenWidth + small_cloud_3->GetSize().x / 2, small_cloud_3->GetPosition().y);
 
 	//Moving ground
 		m_ground1->Set2DPosition(m_ground1->GetPosition().x - speed * deltaTime, m_ground1->GetPosition().y);
@@ -277,42 +292,56 @@ void GSPlay::Update(float deltaTime)
 			m_ground2->Set2DPosition(m_ground2->GetPosition().x + 4 * (float)Globals::screenWidth / 2, m_ground2->GetPosition().y);
 
 	//Moving Spike
-		int rd = rand() % (4 - 2 + 1) + 2;
+		
 		Timer += deltaTime;
-		if (Timer > rd)
-		{
-			for (int i = 0; i < m_listObstacles.size(); i++) {
-				if (m_listObstacles[i]->GetPosition().x == (float)Globals::screenWidth + 24) {
-					m_listObstacles[i]->Set2DPosition(m_listObstacles[i]->GetPosition().x - speed * deltaTime, m_listObstacles[i]->GetPosition().y);
+	
+			for (int i = 0; i < m_listObstacles.size(); i++) {				
+				if (m_listObstacles[i]->GetPosition().x + 24 < 0)
+				{
+					m_listObstacles[i]->ResetPos();		//If current obstacle is out of the screen, reset it's position
 				}
-				if (m_listObstacles[i]->GetPosition().x + 24 < 0) {
-					m_listObstacles[i]->Set2DPosition((float)Globals::screenWidth + 24, m_listObstacles[i]->GetPosition().y);
-				}				
-			}
-			Timer = 0;
-		}
+				
+			}		
 
+		
+			m_listObstacles[0]->Spawn(deltaTime, speed);
+			if (Timer > rd)
+			{
+				m_listObstacles[1]->Spawn(deltaTime, speed);
+			}
+			speed += 5 * deltaTime;
+
+			for (int i = 0; i < m_listObstacles.size(); i++) {
+				if (m_listObstacles[i]->CollisionCheck(Player_Pos_X, Player_Pos_Y))
+					printf("VA CHAM! ");
+			}
 
 	//GRAVITY
-		if (m_player->velocity < 350)
-			m_player->velocity += 600 * deltaTime;
+		if (m_player->velocity < 600)
+			m_player->velocity += 1500 * deltaTime;
+
+
 		if (!m_player->OnGround())
 		{
-			if (Player_Pos_Y + m_player->velocity * deltaTime > 568)
-				Player_Pos_Y = 568;
-			else
-				Player_Pos_Y += m_player->velocity * deltaTime;
-
+			Player_Pos_Y += m_player->velocity * deltaTime;			
+			m_player->Set2DPosition(Player_Pos_X, Player_Pos_Y);			
+		}
+		else if (Player_Pos_Y > 568)
+		{
+			Player_Pos_Y = 568;
 			m_player->Set2DPosition(Player_Pos_X, Player_Pos_Y);
 		}
 		
 }
 
 void GSPlay::Draw()
-{
+{	
 	m_background_1->Draw();
 	m_background_2->Draw();
 	m_background_3->Draw();
+	small_cloud_1->Draw();
+	small_cloud_2->Draw();
+	small_cloud_3->Draw();
 	m_ground1->Draw();
 	m_ground2->Draw();
 	m_score->Draw();

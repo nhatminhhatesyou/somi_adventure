@@ -29,13 +29,13 @@ public:
 	void	Draw() override;
 	int m_KeyPress;
 	float Player_Pos_X, Player_Pos_Y;
+	float Timer = 0;
 	float speed = 200;
-	float jumpHeight = 300;
-	float maxHeight;
+	int rd = rand() % (2 - 1 + 1) + 1;
 
 private:
 	std::shared_ptr<Player>		m_player;
-	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3;
+	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3, small_cloud_1, small_cloud_2, small_cloud_3;
 	std::shared_ptr<Sprite2D>	m_ground1, m_ground2;
 	std::shared_ptr<Obstacle>	spike_1, spike_2, spike_3, spike_4;
 	std::shared_ptr<Text>		m_score;

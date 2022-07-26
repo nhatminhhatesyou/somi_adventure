@@ -14,7 +14,6 @@ bool Obstacle::CollisionCheck(GLfloat x, GLfloat y) {
 	float PosY = this->GetPosition().y; //toa do y cua obstacle
 	if (x >= (PosX - this->GetSize().x / 2 - 30) && x <= (PosX + this->GetSize().x / 2 + 30) && y >= (PosY - this->GetSize().y / 2 - 30) && y <= (PosY + this->GetSize().y / 2 + 30))
 	{
-		printf("VA CHAM!\n");
 		return true;
 	}
 	return false;
@@ -29,4 +28,8 @@ bool Obstacle::OnGround(GLfloat y) {
 
 void Obstacle::ResetPos() {
 		this->Set2DPosition(1080 + 24, 560);	
+}
+
+void Obstacle::Spawn(GLfloat deltaTime, float speed) {	
+		this->Set2DPosition(this->GetPosition().x - speed * deltaTime, this->GetPosition().y); //Make Obstacle moves to the left	
 }
