@@ -30,7 +30,7 @@ void GSPlay::Init()
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D.nfg");
 	auto texture = ResourceManagers::GetInstance()->GetTexture("BG.tga");	
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
-		//layer1	
+		//background	
 		m_background_1 = std::make_shared<Sprite2D>(model, shader, texture);
 		m_background_1->Set2DPosition((float)Globals::screenWidth / 2, (float)Globals::screenHeight / 2);
 		m_background_1->SetSize(Globals::screenWidth, Globals::screenHeight);
@@ -101,8 +101,8 @@ void GSPlay::Init()
 
 	// score
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Brightly Crush Shine.otf");
-	m_score = std::make_shared< Text>(shader, font, "hihi", TextColor::RED, 1.0);
+	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Minecraft.ttf");
+	m_score = std::make_shared<Text>(shader, font, "Score:", TextColor::WHITE, 1.0);
 	m_score->Set2DPosition(Vector2(5, 25));
 
 
@@ -260,6 +260,14 @@ void GSPlay::Update(float deltaTime)
 	}
 	m_player->Update(deltaTime);
 
+	//Score
+	cur_score += 1;
+	std::string s = std::to_string(cur_score);
+	score = "Score: " + std::to_string(cur_score);
+	auto shader = ResourceManagers::GetInstance()->GetShader("TextShader");
+	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Minecraft.ttf");
+	m_score = std::make_shared<Text>(shader, font, score, TextColor::WHITE, 1.0);
+	m_score->Set2DPosition(Vector2(5, 25));
 
 	//Moving Clouds
 		m_background_2->Set2DPosition(m_background_2->GetPosition().x - 200 * deltaTime, m_background_2->GetPosition().y);
@@ -308,8 +316,9 @@ void GSPlay::Update(float deltaTime)
 			if (Timer > rd)
 			{
 				m_listObstacles[1]->Spawn(deltaTime, speed);
+				rd = rand() % (2 - 1 + 1) + 1;
 			}
-			speed += 5 * deltaTime;
+			speed += 8 * deltaTime;
 
 			for (int i = 0; i < m_listObstacles.size(); i++) {
 				if (m_listObstacles[i]->CollisionCheck(Player_Pos_X, Player_Pos_Y))

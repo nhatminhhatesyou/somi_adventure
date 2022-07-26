@@ -1,27 +1,27 @@
 ﻿  GSPlay.cpp
 C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(95,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(298,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(314,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(361,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(306,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(323,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(370,20): warning C4018: '<': signed/unsigned mismatch
 E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\xutility(149,77): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2018): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(_Ty &,std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&) noexcept(false)' being compiled
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2018): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[7],TextColor,double>(_Ty &,std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[7],TextColor &&,double &&) noexcept(false)' being compiled
           with
           [
               _Ty=Text
           ]
-E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[7],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[7],TextColor &&,double &&)' being compiled
           with
           [
               _Ty=Text
           ]
-E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
+E:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\memory(2730): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[7],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[7],TextColor &&,double &&)' being compiled
           with
           [
               _Ty=Text
           ]
-C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(105): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[5],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[5],TextColor &&,double &&)' being compiled
+C:\Users\MY PC\source\repos\nminh\MiniGameStarter\TrainingFramework\src\GameStates\GSPlay.cpp(105): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shader>&,std::shared_ptr<Font>&,const char(&)[7],TextColor,double>(std::shared_ptr<Shader> &,std::shared_ptr<Font> &,const char (&)[7],TextColor &&,double &&)' being compiled
   TrainingFramework.vcxproj -> C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\TrainingFramework.exe

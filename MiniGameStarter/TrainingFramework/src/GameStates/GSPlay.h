@@ -32,6 +32,9 @@ public:
 	float Timer = 0;
 	float speed = 200;
 	int rd = rand() % (2 - 1 + 1) + 1;
+	int cur_score = 0;
+	std::string score;
+	std::string hi_score ;
 
 private:
 	std::shared_ptr<Player>		m_player;
