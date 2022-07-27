@@ -2,6 +2,7 @@
 #include "GameStateBase.h"
 #include "GameButton.h"
 
+class SpriteAnimation;
 class GSMenu :
 	public GameStateBase
 {
@@ -23,7 +24,7 @@ public:
 	void	Draw() override;
 
 private:
-	std::shared_ptr<Sprite2D>				m_background;
+	std::shared_ptr<SpriteAnimation>		m_background;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
 	std::shared_ptr<Text>					m_textGameName;
 

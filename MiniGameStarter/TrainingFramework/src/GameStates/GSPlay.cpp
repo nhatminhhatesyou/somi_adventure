@@ -264,8 +264,8 @@ void GSPlay::Update(float deltaTime)
 		m_hiScore = std::make_shared<Text>(shader, font, "HIGH SCORE: " + std::to_string(Globals::hi_score), TextColor::WHITE, 1.0);
 		m_hiScore->Set2DPosition(Vector2(5, 25));
 		//play Again text
-		m_playAgain = std::make_shared<Text>(shader, font, "PLAY AGAIN", TextColor::BLACK, 1.0);
-		m_playAgain->Set2DPosition(Globals::screenWidth / 2 - 70, Globals::screenHeight / 2 - 120);
+		m_playAgain = std::make_shared<Text>(shader, font, "PLAY AGAIN", TextColor::BLACK, 3.0);
+		m_playAgain->Set2DPosition(Globals::screenWidth / 2 - 200, Globals::screenHeight / 2 - 120);
 		
 		
 

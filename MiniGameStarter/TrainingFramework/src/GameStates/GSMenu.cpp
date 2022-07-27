@@ -1,5 +1,6 @@
 #include "GSMenu.h"
 #include "Camera.h"
+#include "SpriteAnimation.h"
 GSMenu::GSMenu() : GameStateBase(StateType::STATE_MENU), 
 	m_background(nullptr), m_listButton(std::list<std::shared_ptr<GameButton>>{}), m_textGameName(nullptr)
 {
@@ -15,19 +16,21 @@ GSMenu::~GSMenu()
 void GSMenu::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D.nfg");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_main_menu.tga");
-
+	
 	// background
-	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
-	m_background = std::make_shared<Sprite2D>(model, shader, texture);
+	auto texture = ResourceManagers::GetInstance()->GetTexture("BGmenu.tga");
+	auto shader = ResourceManagers::GetInstance()->GetShader("Animation");
+	m_background = std::make_shared<SpriteAnimation>(model, shader, texture, 26, 1, 0, 0.05f);
 	m_background->Set2DPosition(Globals::screenWidth / 2, Globals::screenHeight / 2);
-	m_background->SetSize(Globals::screenWidth, Globals::screenHeight);
+	//m_background->SetSize(Globals::screenWidth, Globals::screenHeight);
+	m_background->SetSize(1080, 540);
 
 	// play button
-	texture = ResourceManagers::GetInstance()->GetTexture("btn_play.tga");
+	shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
+	texture = ResourceManagers::GetInstance()->GetTexture("PlayButton.tga");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(Globals::screenWidth / 2, Globals::screenHeight / 2);
-	button->SetSize(200, 200);
+	button->SetSize(300, 97);
 	button->SetOnClick([]() {
 			GameStateMachine::GetInstance()->ChangeState(StateType::STATE_PLAY);
 		});
@@ -46,8 +49,8 @@ void GSMenu::Init()
 	// game title
 	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
 	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("Brightly Crush Shine.otf");
-	m_textGameName = std::make_shared< Text>(shader, font, "Epic Game", Vector4(1.0f, 0.5f, 0.0f, 1.0f), 3.0f);
-	m_textGameName->Set2DPosition(Vector2(60, 200));
+	m_textGameName = std::make_shared<Text>(shader, font, "Somi's adventure", TextColor::BLACK, 3.0);
+	m_textGameName->Set2DPosition(Globals::screenWidth / 2 - 300  , Globals::screenHeight / 2 - 100 );
 
 	std::string name = "Alarm01.wav";
 	ResourceManagers::GetInstance()->PlaySound(name);
