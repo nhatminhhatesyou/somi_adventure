@@ -219,7 +219,8 @@ void GSPlay::Update(float deltaTime)
 				m_player->Set2DPosition(Player_Pos_X, Player_Pos_Y);
 		
 			break;
-		case 8: // JUMP	
+		case 8: // JUMP				
+			
 			if (!m_player->OnGround())
 				break;
 			m_player->velocity *= -1;
@@ -267,8 +268,6 @@ void GSPlay::Update(float deltaTime)
 		m_playAgain = std::make_shared<Text>(shader, font, "PLAY AGAIN", TextColor::BLACK, 3.0);
 		m_playAgain->Set2DPosition(Globals::screenWidth / 2 - 200, Globals::screenHeight / 2 - 120);
 		
-		
-
 		//Moving Clouds
 		m_background_2->Set2DPosition(m_background_2->GetPosition().x - 200 * deltaTime, m_background_2->GetPosition().y);
 		if (m_background_2->GetPosition().x < -(float)Globals::screenWidth / 2)
@@ -316,7 +315,7 @@ void GSPlay::Update(float deltaTime)
 			m_listObstacles[1]->Spawn(deltaTime, speed);
 			rd = rand() % (2 - 1 + 1) + 1;
 		}
-		speed += 8 * deltaTime;
+		speed += 10 * deltaTime;
 
 		for (int i = 0; i < m_listObstacles.size(); i++) {
 			if (m_listObstacles[i]->CollisionCheck(Player_Pos_X, Player_Pos_Y))

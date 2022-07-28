@@ -1,0 +1,6 @@
+﻿  esShader.cpp
+  esUtil.cpp
+  esUtil_win.cpp
+  CMath.cpp
+  TGA.cpp
+  Utilities.vcxproj -> C:\Users\MY PC\source\repos\nminh\MiniGameStarter\BIN-Nvidia\Utilities.lib

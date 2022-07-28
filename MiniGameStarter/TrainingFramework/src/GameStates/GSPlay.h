@@ -36,7 +36,6 @@ public:
 	float	speed = 200;
 	bool	GameOver = false;
 
-
 private:
 	std::shared_ptr<Player>		m_player;
 	std::shared_ptr<Sprite2D>	m_background_1, m_background_2, m_background_3, small_cloud_1, small_cloud_2, small_cloud_3;

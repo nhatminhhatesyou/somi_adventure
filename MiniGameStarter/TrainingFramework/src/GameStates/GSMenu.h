@@ -22,7 +22,7 @@ public:
 	void	HandleMouseMoveEvents(int x, int y) override;
 	void	Update(float deltaTime) override;
 	void	Draw() override;
-
+	
 private:
 	std::shared_ptr<SpriteAnimation>		m_background;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
